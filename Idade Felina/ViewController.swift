@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textIdade: UITextField!
+    @IBOutlet weak var labelIdadeCalculada: UILabel!
+    
+    @IBAction func botaoCalcularIdade(sender: AnyObject) {
+    
+        var idadeGato = Int(textIdade.text!)
+        idadeGato = idadeGato! * 7
+        
+        labelIdadeCalculada.text = "A idade do seu gato é \(idadeGato)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
