@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     
     @IBAction func botaoCalcularIdade(sender: AnyObject) {
     
-        var idadeGato = Int(textIdade.text!)
-        idadeGato = idadeGato! * 7
+        let idadeGato = Int(textIdade.text!)
+        let idadeGatoFinal = idadeGato! * 7
         
-        labelIdadeCalculada.text = "A idade do seu gato é \(idadeGato)"
+        labelIdadeCalculada.text = "A idade do seu gato é \(idadeGatoFinal)"
     }
     
     override func viewDidLoad() {
